@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+    padding-inline: 2rem;
+}
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+    /* Utility Classes */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-block {
+    color: var(--dark-grayish-blue);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 40rem;
+}
+
+.text-block > p {
+    opacity: .6;
+}
+
+    /* Main */
+
+.main-container {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    place-items: center;
+    min-height: 37rem;
+}
+
+.main {
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+    max-width: 35rem;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.download-options {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: .8rem 2rem;
+    border: none;
+    color: #fff;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: .9rem;
+    border-bottom: solid 3px #00000033;
+    transition: opacity .3s;
+}
+
+.ios {
+    background-color: var(--strong-cyan);
+}
+
+.mac {
+    background-color: var(--light-blue);
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+    /* Snippets */
+
+.snippets-sect {
+    gap: 6rem;
+}
+
+.snippets-title {
+    font-size: 1.8rem;
+}
+
+.snippets-computer {
+    flex-direction: row;
+    width: 100%;
+}
+
+.computer {
+    position: relative;
+    left: calc(10vw - 210px);
+}
+
+.snippets {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    width: 100%;
+}
+
+.snippet {
+    text-align: left;
+    max-width: none;
+    gap: .5rem;
+    max-width: 22rem;
+}
+
+.snippet > h3 {
+    font-size: 1.4rem;
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
