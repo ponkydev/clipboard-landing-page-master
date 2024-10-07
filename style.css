@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4rem;
 }
 
 .text-block {
@@ -39,6 +40,10 @@ body {
 
 .text-block > p {
     opacity: .6;
+}
+
+sub-2 {
+    font-size: 1.8rem;
 }
 
     /* Main */
@@ -96,7 +101,7 @@ body {
     /* Snippets */
 
 .snippets-sect {
-    gap: 6rem;
+    margin-top: 2rem;
 }
 
 .snippets-title {
@@ -106,11 +111,13 @@ body {
 .snippets-computer {
     flex-direction: row;
     width: 100%;
+    gap: min(4rem, 4vw);
 }
 
 .computer {
     position: relative;
     left: calc(10vw - 210px);
+    width: min(60vw, 100%);
 }
 
 .snippets {
@@ -129,6 +136,12 @@ body {
 
 .snippet > h3 {
     font-size: 1.4rem;
+}
+
+    /* Clipboard */
+
+.clipboard-sect {
+    margin-top: 6rem;
 }
 
 /* .attribution { font-size: 11px; text-align: center; }
