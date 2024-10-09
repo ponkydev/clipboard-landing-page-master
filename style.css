@@ -9,7 +9,7 @@
     font-family: "Bai Jamjuree", sans-serif;
 }
 
-body {
+section {
     padding-inline: 2rem;
 }
 
@@ -50,6 +50,7 @@ body {
     display: grid;
     place-items: center;
     min-height: 37rem;
+    padding-inline: 0;
 }
 
 .main {
@@ -118,6 +119,7 @@ body {
     flex-wrap: wrap;
     gap: 4rem;
     width: 100%;
+    margin-left: min(3%, 4rem);
 }
 
 .snippet {
