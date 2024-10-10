@@ -11,6 +11,7 @@
 
 section {
     padding-inline: 2rem;
+    margin-top: min(10vh, 8rem);
 }
 
 :root {
@@ -56,6 +57,7 @@ sub-2 {
     place-items: center;
     min-height: 37rem;
     padding-inline: 0;
+    margin-top: 0;
 }
 
 .main {
@@ -102,7 +104,7 @@ sub-2 {
     /* Snippets */
 
 .snippets-sect {
-    margin-top: 2rem;
+    gap: min(12vh, 8rem);
 }
 
 .snippets-title {
@@ -126,7 +128,6 @@ sub-2 {
     flex-wrap: wrap;
     gap: 4rem;
     width: 100%;
-    margin-left: min(3%, 4rem);
 }
 
 .snippet {
@@ -140,11 +141,29 @@ sub-2 {
     font-size: 1.4rem;
 }
 
+@media screen and (max-width: 950px) {
+
+    .snippets-computer {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .computer {
+        left: 0;
+        min-width: 450px;
+    }
+
+    .snippets {
+        justify-content: center;
+    }
+
+    .snippet {
+        text-align: center;
+    }
+}
+
     /* Clipboard */
 
-.clipboard-sect {
-    margin-top: 6rem;
-}
 
 /* .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } */
