@@ -175,6 +175,51 @@ sub-2 {
     gap: 8rem;
 }
 
+    /* Footer */
+.footer {
+    height: 9rem;
+    background-color: hsl(200, 23%, 92%);
+    margin-top: min(20vh, 10rem);
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo-footer {
+    width: 4rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 8rem);
+    max-width: 32rem;
+    list-style: none;
+    gap: 1rem 3rem;
+    height: 50%;
+}
+
+.link {
+    align-self: center;
+}
+
+.link > a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+
+.social-media-icons {
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.social-media-icons > a {
+    height: 24px;
+}
+
+.social-media-icons > a:nth-child(2) {
+    height: 20px;
+}
+
 /* .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } */
 
