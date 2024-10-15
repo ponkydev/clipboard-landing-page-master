@@ -183,15 +183,14 @@ sub-2 {
     margin-top: min(20vh, 10rem);
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-inline: 10vw;
+    justify-content: space-around;
 }
 
 .logo-links-container {
     flex-direction: row;
     gap: max(4rem, 10vw);
     flex-wrap: wrap;
-    flex-basis: 70%;
+    width: 70%;
 }
 
 .logo-footer {
@@ -204,7 +203,8 @@ sub-2 {
     list-style: none;
     gap: 1rem 3rem;
     height: 50%;
-    width: calc(100% - 52.8px - max(4rem, 10vw));
+    width: 30rem;
+    min-width: 19rem;
 }
 
 .link {
@@ -264,7 +264,60 @@ sub-2 {
         text-align: center;
     }
 
+    .logo-links-container {
+        justify-content: center;
+    }
+
+    .footer-links {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .introduction {
+        width: 80%;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding-block: 2rem;
+        gap: max(4rem, 10vw);
+    }
+
+    .logo-links-container {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        width: auto;
+        min-width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        gap: 3rem;
+    }
+    .main-container {
+        min-height: auto;
+    }
+
+    .main {
+        margin-top: 6rem;
+    }
+
+    .download-options {
+        flex-direction: column;
+    }
+
+    .btn {
+        padding: .8rem 4rem;
+    }
+
     .brands-sect {
-        gap: 4rem;
+        gap: 5rem 10rem;
     }
 }
